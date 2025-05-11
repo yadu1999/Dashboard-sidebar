@@ -1,0 +1,64 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f9fc; 
+  width: 70px; 
+  height: 100vh; 
+  padding: 10px 8px; 
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 8px;
+  color: #333; 
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500; 
+  padding-top: 6px; 
+}
+
+.menu-item:hover {
+  background-color: #e9f1fa; 
+}
+
+.icon {
+  font-size: 16px; 
+  margin-bottom: 4px;
+}
+
+.add-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1a73e8; 
+  width: 36px; 
+  height: 36px;
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.plus-icon {
+  color: white;
+  font-size: 18px; 
+  font-weight: bold;
+}
+
+.add-button:hover {
+  background-color: #1557b0; 
+}

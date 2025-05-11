@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.browser-container {
+  max-width: 700px;
+  /* margin: 0 auto; */
+     max-width: 36%;
+  padding: 20px;
+  background: #fff;
+}
+
+
+
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 40px 10px 16px; /* padding-right for icon */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.search-icon-end {
+   position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  font-size: 20px;           /* Slightly larger */
+  color: #222;               /* Darker for more contrast */
+  font-weight: bold;         /* Has no effect on SVG, but okay to keep */
+  stroke-width: 2px;         /* Only affects some icons, safe to try */
+  pointer-events: none;
+}
+
+/* .search-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+} */
+
+.tabs {
+  display: flex;
+  gap: 16px;
+  font-size: 15px;
+  margin-bottom: 14px;
+  align-items: center;
+  text-align: center
+}
+
+.tab {
+  cursor: pointer;
+  padding: 4px 10px;
+  color: #555;
+  width: 50%;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+  color: #000;
+  font-weight: 600;
+  width: 50%;
+  border-bottom: 2px solid #4a90e2;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.chip {
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.see-all {
+  font-size: 13px;
+  color: #4a90e2;
+  cursor: pointer;
+}
+
+.card-grid {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 48%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.card-title {
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
